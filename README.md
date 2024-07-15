@@ -1,69 +1,64 @@
-Emotion Detection with LSTM Model
-Overview
-This project aims to build an emotion detection model using LSTM (Long Short-Term Memory) networks. The model is trained on a dataset of tweets labeled with different emotions. It is capable of predicting the emotion of a given tweet or sentence.
+# Emotion Detection with LSTM Model
 
-Requirements
-Python 3.x
-TensorFlow 2.x
-NumPy
-Matplotlib
-Project Structure
-train.txt, val.txt, test.txt: These files contain the training, validation, and test datasets, respectively. Each line in these files has the format tweet;label.
-emotion_detection.py: The main script for training the model and predicting emotions.
-emotion_detection.ipynb: Jupyter notebook with the same functionality as the main script for easier experimentation and visualization.
-Setup
-Clone the repository.
-Install the required packages:
+This project implements an emotion detection model using LSTM (Long Short-Term Memory) networks with TensorFlow and Keras.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Dataset Requirements](#dataset-requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Repository Structure](#repository-structure)
+
+## Introduction
+The Emotion Detection with LSTM Model project aims to classify emotions from textual data using deep learning techniques. It utilizes bidirectional LSTM layers for sequence processing and softmax activation for multi-class classification.
+
+## Features
+- Tokenization and sequence padding of textual data
+- Bidirectional LSTM architecture for capturing sequence information
+- Training, validation, and testing of the emotion detection model
+- Command-line interface for predicting emotions from user input sentences
+
+## Dataset Requirements
+- The project expects training, validation, and test datasets in the format:
+  - `train.txt`, `val.txt`, `test.txt`: Each line in these files should contain a tweet followed by a label separated by ';'.
+
+## Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your_username/emotion-detection-lstm.git
+   cd emotion-detection-lstm
+2. Install the required Python packages:
 bash
 Copy code
-pip install tensorflow numpy matplotlib
-Place your dataset files (train.txt, val.txt, test.txt) in the project directory.
-Usage
+  pip install tensorflow numpy matplotlib 
+## Usage
 Training the Model
-To train the model, run the emotion_detection.py script:
-
+Prepare your dataset files (train.txt, val.txt, test.txt) in the project directory.
+Run the training script:
 bash
 Copy code
 python emotion_detection.py
-This script will:
-
-Load the training, validation, and test datasets.
-Preprocess the data by tokenizing the tweets and converting labels to indices.
-Build and compile an LSTM model.
-Train the model on the training data and validate it on the validation data.
+This script will load, tokenize, pad sequences, build, compile, and train the LSTM model.
+Training progress and validation accuracy will be displayed.
 Predicting Emotions
-After training the model, you can use the same script to predict emotions from the command line:
-
+After training, you can predict emotions using the trained model:
 bash
 Copy code
 python emotion_detection.py
-Enter a sentence when prompted, and the model will predict the emotion. Type 0 to quit.
-
-Using the Jupyter Notebook
-For experimentation and visualization, you can use the Jupyter notebook:
-
-bash
+Enter a sentence when prompted. The model will predict the emotion based on the input.
+## Repository Structure
+kotlin
 Copy code
-jupyter notebook emotion_detection.ipynb
-The notebook contains the same steps as the script, with additional visualizations and explanations.
-
-Data Preprocessing
-Loading Data: The datasets are loaded from text files.
-Splitting Data: Tweets and labels are extracted from each line in the datasets.
-Tokenizing Tweets: Tweets are tokenized and converted to sequences of integers.
-Padding Sequences: Sequences are padded to a fixed length.
-Mapping Labels: Labels are mapped to numerical indices.
-Model Architecture
-The model consists of:
-
-An Embedding layer with an input dimension of 10,000 and output dimension of 16.
-Two Bidirectional LSTM layers with 20 units each.
-A Dense layer with a softmax activation function for multi-class classification.
-Training
-The model is trained using the Adam optimizer and sparse categorical crossentropy loss function. The training process includes validation on a separate validation dataset to monitor performance and avoid overfitting.
-
-Evaluation
-The model's performance can be evaluated using the test dataset. After training, you can visualize the training and validation accuracy and loss over epochs.
-
-Contribution
-Feel free to fork the repository and contribute by submitting pull requests.
+tweet_emotion_detection/
+├── tweet_emotion_detection.py
+├── tweet_emotion_detection.ipynb
+├── train.txt
+├── val.txt
+├── test.txt
+└── README.md
+emotion_detection.py: Main script for model training and prediction.
+train.txt, val.txt, test.txt: Dataset files containing tweets and labels.
+README.md: This file providing project overview, installation, and usage instructions.
+## Contributing
+Contributions are welcome! Please feel free to open issues or pull requests for any improvements or features.
