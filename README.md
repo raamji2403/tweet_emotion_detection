@@ -35,9 +35,8 @@ The Emotion Detection with LSTM Model project aims to classify emotions from tex
 Training the Model
 Prepare your dataset files (train.txt, val.txt, test.txt) in the project directory.
 Run the training script:
-bash
-Copy code
-python emotion_detection.py
+    ```bash
+    python emotion_detection.py
 This script will load, tokenize, pad sequences, build, compile, and train the LSTM model.
 Training progress and validation accuracy will be displayed.
 Predicting Emotions
