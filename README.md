@@ -30,20 +30,18 @@ The Emotion Detection with LSTM Model project aims to classify emotions from tex
    cd emotion-detection-lstm
 2. Install the required Python packages:
    ```bash
-   pip install tensorflow numpy matplotlib 
+   pip install tensorflow numpy matplotlib
 ## Usage
-Training the Model
-Prepare your dataset files (train.txt, val.txt, test.txt) in the project directory.
-Run the training script:
-    ```bash
-    python emotion_detection.py
-This script will load, tokenize, pad sequences, build, compile, and train the LSTM model.
-Training progress and validation accuracy will be displayed.
-Predicting Emotions
-After training, you can predict emotions using the trained model:
-bash
-Copy code
-python emotion_detection.py
+Training the Model<br>
+Prepare your dataset files (train.txt, val.txt, test.txt) in the project directory.<br>
+This script will load, tokenize, pad sequences, build, compile, and train the LSTM model.<br>
+Training progress and validation accuracy will be displayed.<br>
+Predicting Emotions<br>
+After training, you can predict emotions using the trained model:<br>
+  ```bash
+  python tweet_emotion_detection.py
+  ```  
+<br>
 Enter a sentence when prompted. The model will predict the emotion based on the input.
 ## Repository Structure
 tweet_emotion_detection/<br>
