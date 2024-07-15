@@ -54,6 +54,7 @@ tweet_emotion_detection/
 ├── val.txt
 ├── test.txt
 └── README.md
+'\n'
 emotion_detection.py: Main script for model training and prediction.
 train.txt, val.txt, test.txt: Dataset files containing tweets and labels.
 README.md: This file providing project overview, installation, and usage instructions.
