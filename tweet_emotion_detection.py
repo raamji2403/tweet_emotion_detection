@@ -10,9 +10,9 @@ def load_data(file_path):
         return file.readlines()
     
 # Load datasets
-train_file = "./train.txt"
-val_file = "./val.txt"
-test_file = "./test.txt"
+train_file = "path/to/train.txt"
+val_file = "path/to/val.txt"
+test_file = "path/to/test.txt"
 train = load_data(train_file)
 val = load_data(val_file)
 test = load_data(test_file)
