@@ -43,6 +43,7 @@ After training, you can predict emotions using the trained model:<br>
   ```  
 <br>
 Enter a sentence when prompted. The model will predict the emotion based on the input.
+
 ## Repository Structure
 tweet_emotion_detection/<br>
 ├── tweet_emotion_detection.py<br>
