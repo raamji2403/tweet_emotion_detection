@@ -9,7 +9,7 @@ This project implements an emotion detection model using LSTM (Long Short-Term M
 - [Installation](#installation)
 - [Usage](#usage)
 - [Repository Structure](#repository-structure)
-
+  
 ## Introduction
 The Emotion Detection with LSTM Model project aims to classify emotions from textual data using deep learning techniques. It utilizes bidirectional LSTM layers for sequence processing and softmax activation for multi-class classification.
 
