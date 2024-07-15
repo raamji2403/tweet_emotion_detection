@@ -46,12 +46,12 @@ Copy code
 python emotion_detection.py
 Enter a sentence when prompted. The model will predict the emotion based on the input.
 ## Repository Structure
-tweet_emotion_detection/
-├── tweet_emotion_detection.py
-├── tweet_emotion_detection.ipynb
-├── train.txt
-├── val.txt
-├── test.txt
-└── README.md
+tweet_emotion_detection/<br>
+├── tweet_emotion_detection.py<br>
+├── tweet_emotion_detection.ipynb<br>
+├── train.txt<br>
+├── val.txt<br>
+├── test.txt<br>
+└── README.md<br>
 ## Contributing
 Contributions are welcome! Please feel free to open issues or pull requests for any improvements or features.
